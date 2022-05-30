@@ -9,15 +9,19 @@ The code implements the next:
 
 3) Then, I approximate the experimental data of the theoretical dependences. In order to reach it, I use the **scipy.optimize.curve_fit()** function:
 
-![Figure_179](https://user-images.githubusercontent.com/87599571/171039311-7474c1d0-795e-4ec5-9ba6-3661488f6a9b.png)
+![-20C csv](https://user-images.githubusercontent.com/87599571/171042837-7c8db85c-2247-490f-b4c9-d17d5c89d0c0.png)
 
 To estimate the quality of approximation I do the following:
+
  a) print the fitting parameters with errors (from **covariance matrix**: **np.sqrt(np.diag(res1))[1]**)
  
  b) print **np.std**
  
  c) print the coefficient of determination **r2_score** from **sklearn.metrics**
+ 
 After all, I save all images.
+
+4) Then, I build different dependencies: Amplitude(T), Losses(T), T_Ballast(T)  
 
  
 I wrote the code that allows to estimate the deviation between the theoretical predictable and the experimental reflectograms. Then, I added the opportunity to convert reflectogramms to the thermogramms (Distribution of the Temperature on the measuring line). 
