@@ -13,10 +13,11 @@ The code implements the next:
 
 To estimate the quality of approximation I do the following:
  a) print the fitting parameters with errors (from **covariance matrix**: **np.sqrt(np.diag(res1))[1]**)
+ 
  b) print **np.std**
+ 
  c) print the coefficient of determination **r2_score** from **sklearn.metrics**
 After all, I save all images.
 
-4) 
  
 I wrote the code that allows to estimate the deviation between the theoretical predictable and the experimental reflectograms. Then, I added the opportunity to convert reflectogramms to the thermogramms (Distribution of the Temperature on the measuring line). 
