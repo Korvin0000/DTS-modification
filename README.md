@@ -10,7 +10,7 @@ The code implements the next:
 
 ![Figure_1](https://user-images.githubusercontent.com/87599571/170989541-4ed7bc2d-1f93-4bcc-94ee-dac95d9f4e1a.png)
 
-**3)** Then, I approximate the experimental data of the theoretical dependences. In order to reach it, I use the **scipy.optimize.curve_fit()** function:
+**3)** Then, I approximate the experimental data of the theoretical dependences. For this, I use the **scipy.optimize.curve_fit()** function:
 
 ![-20C csv](https://user-images.githubusercontent.com/87599571/171042837-7c8db85c-2247-490f-b4c9-d17d5c89d0c0.png)
 
