@@ -5,18 +5,10 @@ import pylab as pl
 from scipy.optimize import curve_fit
 import glob
 from sklearn.metrics import r2_score
-from tkinter import Tcl
-import natsort 
 
 path = 'C:\\double laser\\new\\' 
 flist = glob.glob(path+'*.csv')
 
-"""
-Flist=np.array([])
-for i in flist:
-    Flist=np.append(Flist,i.split("new\\")[1].split("C")[0])
-Flist = sorted(Flist, key=int)
-                   """
 n = 0
 Ampl_As = np.array([])
 Ampl_S = np.array([])
@@ -104,7 +96,6 @@ for f in flist[0:1]:
 pl.figure('Amplitude')
 pl.plot(T_arr,Ampl_As,'-o', label='Astokes')
 pl.plot(T_arr,Ampl_S,'-o', label='Stokes')
-
 pl.xlabel('Temperature (C)', fontsize = 13)
 pl.ylabel('Amplitude (arb.un.)', fontsize = 13)
 pl.legend()
