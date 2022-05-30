@@ -24,5 +24,5 @@ To estimate the quality of approximation I do the following:
  
 After all, I save all images.
 
-**4)** Then, I build the different dependencies: Amplitude(T), Losses(T), T_Ballast(T)  
+**4)** Eventually, I build the different dependencies: Amplitude(T), Losses(T), T_Ballast(T)  
 
